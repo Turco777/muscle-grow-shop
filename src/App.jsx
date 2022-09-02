@@ -1,16 +1,19 @@
 // un componente de react es una funcion de javascript
 import './App.css';
-import Navbar from "./components/nav/Navbar"
+import NavBar from "./components/navBar/NavBar"
+import ItemListContainer from './components/itemListContainer/ItemListContainer';
 
- 
+
 // Convencion 
 //SE DEBE LLAMAR IGUAL Q EL ARCHIVO
 //EL NOMBRE EMPIEZA CON MAYUSCULA
 const App = () => {
+  const bienvenida = 'bienvenidos a nuestra pagina web'
   return (
     <>
-      <h1>Hola Mundo!</h1>
-      <Navbar />
+     {/* <h1>Hola Mundo!</h1> */}
+      <NavBar />
+      <ItemListContainer bienvenida = {bienvenida} />    
     </> 
   );
 }

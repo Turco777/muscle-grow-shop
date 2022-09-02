@@ -1,4 +1,16 @@
-.App {
+
+
+
+
+*{
+  background-color: rgb(255, 250, 244);
+}
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -36,3 +48,4 @@
     transform: rotate(360deg);
   }
 }
+ */

@@ -1,14 +1,15 @@
-import React from 'react';
+import React from 'react'; 
+import { CartWidget } from './CartWidget'
 import  estilos from'./nav.module.css'
 
-const Navbar = () =>{
+const NavBar = () =>{
     return( 
         <header>
             <nav className={estilos.nav}>
                 
                 <ul>
                 <div className={estilos.logo}>
-                 <p>Mundo <b className={estilos.masco}>MASCOTAS</b></p>
+                 <p>Mundo <b className={estilos.masco}>SUPLEMENTOS</b></p>
                  </div>
                     <li>
                         <a href="http://">Nosotros</a>
@@ -22,6 +23,9 @@ const Navbar = () =>{
                     <li>
                         <a href="http://">Ubicacion</a>
                     </li>
+                    <li>
+                    <CartWidget/>
+                   </li>
                 </ul>
               
             </nav>
@@ -29,4 +33,4 @@ const Navbar = () =>{
     )
 }
 
-export default Navbar;
+export default NavBar;
